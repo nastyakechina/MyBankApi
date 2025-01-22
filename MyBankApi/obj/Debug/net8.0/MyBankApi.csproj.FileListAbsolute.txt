@@ -72,3 +72,7 @@ C:\Users\Настюшка\RiderProjects\MyBankApi\MyBankApi\bin\Debug\net8.0\Mat
 C:\Users\Настюшка\RiderProjects\MyBankApi\MyBankApi\bin\Debug\net8.0\Material.Styles.dll
 C:\Users\Настюшка\RiderProjects\MyBankApi\MyBankApi\bin\Debug\net8.0\Material.Icons.dll
 C:\Users\Настюшка\RiderProjects\MyBankApi\MyBankApi\bin\Debug\net8.0\Material.Icons.Avalonia.dll
+C:\Users\Настюшка\RiderProjects\MyBankApi\MyBankApi\obj\Debug\net8.0\MyBankApi.sourcelink.json
+C:\Users\Настюшка\RiderProjects\MyBankApi\MyBankApi\obj\Debug\net8.0\MyBankApi.dll
+C:\Users\Настюшка\RiderProjects\MyBankApi\MyBankApi\obj\Debug\net8.0\refint\MyBankApi.dll
+C:\Users\Настюшка\RiderProjects\MyBankApi\MyBankApi\obj\Debug\net8.0\MyBankApi.pdb
