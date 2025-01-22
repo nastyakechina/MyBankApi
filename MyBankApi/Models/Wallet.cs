@@ -1,0 +1,5 @@
+using System;
+
+namespace Models;
+
+public record Wallet(Guid id ,string Name);

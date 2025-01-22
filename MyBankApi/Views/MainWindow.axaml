@@ -8,11 +8,22 @@
         Width="400" Height="500"
         Title="Биржа валют">
 
-    <StackPanel Margin="20">
-        <Button Content="Пополнить кошелек" Command="{Binding DepositWalletCommand}" Margin="0,10"/>
-        <Button Content="Конвертировать валюту" Command="{Binding ConvertCurrencyCommand}" Margin="0,10"/>
-        <Button Content="Добавить валюту" Command="{Binding AddCurrencyCommand}" Margin="0,10"/>
-        <Button Content="Просмотр кошелька" Command="{Binding ViewBalanceCommand}" Margin="0,10"/>
-        <Button Content="История транзакций" Command="{Binding ViewTransactionHistoryCommand}" Margin="0,10"/>
-    </StackPanel>
+    <Grid>
+        <!-- Главное меню -->
+        <StackPanel IsVisible="{Binding IsMainMenuVisible}" Margin="20">
+            <Button Content="Пополнить кошелек" Command="{Binding ShowDepositFormCommand}" Margin="0,10"/>
+            <Button Content="Конвертировать валюту" Command="{Binding ConvertCurrencyCommand}" Margin="0,10"/>
+            <Button Content="Добавить валюту" Command="{Binding AddCurrencyCommand}" Margin="0,10"/>
+            <Button Content="Просмотр кошелька" Command="{Binding ViewBalanceCommand}" Margin="0,10"/>
+            <Button Content="История транзакций" Command="{Binding ViewTransactionHistoryCommand}" Margin="0,10"/>
+        </StackPanel>
+
+        <!-- Форма пополнения кошелька -->
+        <StackPanel IsVisible="{Binding IsDepositFormVisible}" Margin="20">
+            <TextBox Text="{Binding CurrencyName}" Watermark="Введите валюту" Margin="0,10"/>
+            <TextBox Text="{Binding Amount}" Watermark="Введите сумму" Margin="0,10"/>
+            <Button Content="Подтвердить" Command="{Binding DepositWalletCommand}" Margin="0,10"/>
+            <Button Content="Назад" Command="{Binding HideDepositFormCommand}" Margin="0,10"/>
+        </StackPanel>
+    </Grid>
 </Window>
